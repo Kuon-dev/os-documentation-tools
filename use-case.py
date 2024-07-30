@@ -48,10 +48,7 @@ For each operation identified in the analysis, create a comprehensive use case s
 | Postconditions | [System state after the operation has been successfully completed] |
 | Standard Process | [Numbered steps describing the main success scenario] |
 | Alternative Processes | [Alternative paths, numbered as subsets of the main process steps, e.g., 2a for an alternative to step 2] |
-| Exception Processes | [Error handling processes, numbered as subsets of the main process steps, e.g., 3a for an exception in step 3] |
-| Special Requirements | [Non-functional requirements or constraints specific to this operation] |
-| Assumptions | [Assumptions about the system or user environment for this operation] |
-| Notes and Issues | [Additional information, considerations, or potential issues] |
+| Exception Processes | [Error handling processes such as validation errors, numbered as subsets of the main process steps, e.g., 3a for an exception in step 3] |
 
 Important guidelines:
 1. Always set the primary actor as "End User" and the secondary actor as "System" for all operations.
@@ -64,6 +61,7 @@ Important guidelines:
 8. For search operations, detail the various search criteria and how they affect the results.
 9. For operations returning paginated results, include information about pagination in the process and postconditions.
 10. Write all components considering the interaction between the end user and the system, focusing on what the user does and how the system responds.
+11. If there are similar operations across multiple controllers (e.g GetAll and GetById), combine them into a single use case specification with clear distinctions between the controllers.
 
 Common considerations for different types of operations:
 - CRUD Operations:
